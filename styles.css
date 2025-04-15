@@ -1632,12 +1632,13 @@ footer {
         top: 70px;
         left: 0;
         right: 0;
-        background: var(--background);
+        background: var(--nav-bg);
         padding: 1rem;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
     }
 
     .nav-links.active {
@@ -1653,6 +1654,7 @@ footer {
     .hero {
         padding: 2rem 1rem;
         text-align: center;
+        flex-direction: column;
     }
 
     .hero h1 {
@@ -1661,6 +1663,11 @@ footer {
 
     .hero p {
         font-size: 1rem;
+    }
+
+    .hero-animation {
+        width: 100%;
+        height: 300px;
     }
 
     /* About Section */
@@ -1673,7 +1680,11 @@ footer {
         gap: 2rem;
     }
 
-    .about-image {
+    .about-visual {
+        align-items: center;
+    }
+
+    .profile-container {
         width: 200px;
         height: 200px;
     }
@@ -1690,6 +1701,10 @@ footer {
 
     .skill-card {
         padding: 1rem;
+    }
+
+    .skills-bars {
+        padding: 0 1rem;
     }
 
     /* Projects Section */
@@ -1714,9 +1729,18 @@ footer {
         height: 200px;
     }
 
+    .project-content {
+        padding: 1rem;
+    }
+
     /* Contact Section */
     .contact {
         padding: 2rem 1rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .contact-form {
@@ -1731,6 +1755,16 @@ footer {
 
     .logo-text {
         font-size: 2rem;
+    }
+
+    .geometric-pattern {
+        width: 150px;
+        height: 150px;
+    }
+
+    .shape {
+        width: 75px;
+        height: 75px;
     }
 }
 
@@ -1755,6 +1789,21 @@ footer {
 
     .project-showcase img {
         height: 150px;
+    }
+
+    .tech-tag {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.75rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -1801,7 +1850,7 @@ footer {
         top: 70px;
         left: 0;
         width: 100%;
-        background-color: var(--background-color);
+        background-color: var(--nav-bg);
         padding: 20px;
         flex-direction: column;
         align-items: center;
