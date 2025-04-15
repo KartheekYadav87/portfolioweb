@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-animation">
+            <div class="geometric-pattern">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+            <div class="logo-text">
+                <span class="logo-letter">Crafting</span>
+                <span class="logo-letter">Portfolio</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#resume" class="nav-item">Resume</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#contact" class="nav-item">Contact</a>
+                <button class="theme-toggle" title="Toggle Dark/Light Mode">
+                    <i class="fas fa-moon"></i>
+                    <span class="theme-text">Dark Mode</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name typing-text"></span>
+                </h1>
+                <h2>Software Developer</h2>
+                <p>I build things for the web</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary">Get In Touch</a>
+                    <a href="#projects" class="btn secondary">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <lottie-player
+                    src="https://assets2.lottiefiles.com/packages/lf20_w51pcehl.json"
+                    background="transparent"
+                    speed="1"
+                    loop
+                    autoplay>
+                </lottie-player>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-visual">
+                        <div class="profile-container">
+                            <img src="n1.jpg" alt="Kartheek Yadav" class="profile-image">
+                        </div>
+                        <div class="tech-animation">
+                            <lottie-player
+                                src="https://assets8.lottiefiles.com/packages/lf20_xwmj0hsk.json"
+                                background="transparent"
+                                speed="1"
+                                style="width: 100%; height: 300px;"
+                                loop
+                                autoplay>
+                            </lottie-player>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p class="intro">I'm a passionate software developer and a second-year B.Tech student specializing in Computer Science and Engineering with a focus on Artificial Intelligence and Machine Learning.</p>
+                        
+                        <div class="info-cards">
+                            <div class="info-card education">
+                                <div class="card-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h3>Education</h3>
+                                <p>B.Tech in Computer Science and Engineering (AI & ML)</p>
+                            </div>
+                            
+                            <div class="info-card skills">
+                                <div class="card-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3>Technical Skills</h3>
+                                <p>Python, C/C++, Java, HTML, CSS, JavaScript, ReactJS</p>
+                            </div>
+                            
+                            <div class="info-card interests">
+                                <div class="card-icon">
+                                    <i class="fas fa-gamepad"></i>
+                                </div>
+                                <h3>Interests</h3>
+                                <p>Game Development, AI/ML, Web Development</p>
+                            </div>
+                        </div>
+
+                        <div class="about-description">
+                            <p>My journey in programming began with a curiosity to understand how software shapes the world around us. Since then, I've been actively learning and building projects using a variety of technologies. I have hands-on experience with languages like Python, C/C++, and Java, and I love bringing ideas to life through web development using HTML, CSS, JavaScript, and frameworks like ReactJS.</p>
+
+                            <p>Even as a student, I believe in learning by doing. I've developed several projects that combine creativity with functionality — from responsive websites to dynamic user interfaces and basic full-stack apps. I enjoy solving problems, experimenting with new frameworks, and keeping up with the fast-evolving world of technology.</p>
+
+                            <p>Beyond traditional development, I'm also fascinated by the world of gaming technologies — especially the inner workings of game engines, rendering systems, and animation pipelines. Understanding how immersive visuals and real-time mechanics are built excites me, and I hope to explore this area further as I grow in my tech journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume">
+            <div class="container">
+                <h2 class="section-title">Resume</h2>
+                <div class="resume-header">
+                    <lottie-player
+                        src="https://assets3.lottiefiles.com/packages/lf20_3rwasyjy.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 200px; margin: 0 auto 2rem;"
+                        loop
+                        autoplay>
+                    </lottie-player>
+                </div>
+                <div class="resume-content">
+                    <div class="resume-download">
+                        <a href="resume.pdf" class="btn primary download-btn" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-pdf"></i>
+                            View Resume
+                        </a>
+                    </div>
+                    <div class="resume-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023 - Present</div>
+                            <div class="timeline-content">
+                                <h3>B.Tech in Computer Science and Engineering (AIML)</h3>
+                                <h4>Vellore Institute of Technology</h4>
+                                <p>Currently pursuing my Bachelor's degree with a specialization in Artificial Intelligence and Machine Learning. Maintaining a strong academic performance with a CGPA of 8.54. Actively involved in both academic and extracurricular activities.</p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Core CS</span>
+                                    <span class="tag">AI/ML</span>
+                                    <span class="tag">Web Development</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Management Team Member</h3>
+                                <h4>The Otaku Club, VIT</h4>
+                                <p>Contributing to club management and event organization, helping to create engaging experiences for fellow students while developing leadership and organizational skills.</p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Event Management</span>
+                                    <span class="tag">Leadership</span>
+                                    <span class="tag">Team Collaboration</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Technical Skills</div>
+                            <div class="timeline-content">
+                                <h3>Core Competencies</h3>
+                                <div class="skills-grid-mini">
+                                    <div class="skill-category">
+                                        <h4>Programming</h4>
+                                        <div class="skill-tags">
+                                            <span class="tag">Python</span>
+                                            <span class="tag">C/C++</span>
+                                            <span class="tag">Java</span>
+                                            <span class="tag">JavaScript</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-category">
+                                        <h4>Web Technologies</h4>
+                                        <div class="skill-tags">
+                                            <span class="tag">HTML5</span>
+                                            <span class="tag">CSS3</span>
+                                            <span class="tag">ReactJS</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-category">
+                                        <h4>Areas of Interest</h4>
+                                        <div class="skill-tags">
+                                            <span class="tag">Web Development</span>
+                                            <span class="tag">Machine Learning</span>
+                                            <span class="tag">Game Development</span>
+                                            <span class="tag">Animations</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-header">
+                    <lottie-player
+                        src="https://assets9.lottiefiles.com/packages/lf20_3rwasyjy.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 200px; margin: 0 auto 2rem;"
+                        loop
+                        autoplay>
+                    </lottie-player>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code"></i>
+                        <h3>C/C++</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-java"></i>
+                        <h3>Java</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react"></i>
+                        <h3>React.js</h3>
+                    </div>
+                </div>
+
+                <h3 class="skills-subtitle">Proficiency Levels</h3>
+                <div class="skills-bars">
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar" data-percent="90">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name">CSS3</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar" data-percent="85">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar" data-percent="80">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar" data-percent="85">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name">C/C++</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar" data-percent="75">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar" data-percent="80">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React.js</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar" data-percent="75">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card" data-project="web-dev">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80" alt="Web Development Project">
+                        <h3>Web Development Project</h3>
+                        <p>A comprehensive web development project showcasing modern technologies and best practices.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                    <div class="project-card" data-project="ai-ml">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80" alt="AI/ML Project">
+                        <h3>AI/ML Project</h3>
+                        <p>An innovative machine learning project focused on solving real-world problems.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                    <div class="project-card" data-project="gaming">
+                        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=800&q=80" alt="Gaming Project">
+                        <h3>Gaming Project</h3>
+                        <p>An engaging gaming project built with modern game development technologies.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+                <div class="project-detail-view hidden">
+                    <!-- Project details will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-header">
+                    <lottie-player
+                        src="https://assets3.lottiefiles.com/packages/lf20_u25cckyh.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 200px; margin: 0 auto 2rem;"
+                        loop
+                        autoplay>
+                    </lottie-player>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>pbkartheekyadav@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+91 7842791300</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/KartheekYadav87" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/kartheek-yadav-48b98028a/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/kartheekyadav78/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Kartheek Yadav. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
