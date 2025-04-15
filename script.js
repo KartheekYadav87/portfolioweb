@@ -107,10 +107,19 @@ function initializeWebsite() {
     // Mobile Navigation Toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-item');
 
     hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
         hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu when a nav item is clicked
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
     });
 
     // Smooth Scrolling
@@ -129,7 +138,6 @@ function initializeWebsite() {
 
     // Active Navigation Link on Scroll
     const sections = document.querySelectorAll('section');
-    const navItems = document.querySelectorAll('.nav-item');
 
     window.addEventListener('scroll', () => {
         let current = '';
@@ -411,4 +419,21 @@ function updateThemeIcon(theme) {
 // Call theme initialization when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     initializeThemeToggle();
+});
+
+// Mobile Menu Functionality
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
+
+hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
+
+// Close mobile menu when clicking a nav link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburgerMenu.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
 }); 
